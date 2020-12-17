@@ -1,3 +1,7 @@
+/*
+ * Replaces characters in address string to make API query URL
+ */
+
 def flowFile = session.get()
 
 if (flowFile == null) {

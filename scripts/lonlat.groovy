@@ -1,3 +1,11 @@
+/*
+ * Querying EPA database for all sites within 40km radius
+ * of participant's address.
+ *
+ * Used the formula from:
+ * https://www.movable-type.co.uk/scripts/latlong-db.html
+ */
+
 import groovy.sql.Sql
 import java.util.*
 import java.sql.*
