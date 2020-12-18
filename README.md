@@ -17,7 +17,7 @@ This linkage involves 2 databases:
 
 ### NiFi Pipeline
 ##### Overview:
-The get AQS data process group collects all EPA data from a given date range and populates epa.db. The get participant-specific data process group gets the participant’s address and queries epa.db to get all data within 25 miles, and populates aqs.db.  
+The get AQS data process group collects all EPA data from a given date range and populates epa.db. The get participant-specific data process group gets the participant’s address and queries epa.db to get all data within 25 miles, and populates `aqs.db`.  
 Open template `AQS.xml` in NiFi to see specifics.
 
 Specifics on process groups:  
@@ -34,13 +34,13 @@ This process group converts a participant’s address to URL format and then use
 ### Files:
 
 NiFi template:
-- AQS.xml
+- `AQS.xml`
 
 Models:
-- epa.py - model with table for each pollutant
-- aqs.py - model linking participants with nearby sites
+- `epa.py` - model with table for each pollutant
+- `aqs.py` - model linking participants with nearby sites
 
-Scripts for NiFi flow:
-- epq_date_script.groovy
-- lonlat.groovy
-- parseaddr.groovy
+Scripts for NiFi pipeline:
+- `epq_date_script.groovy`
+- `lonlat.groovy`
+- `parseaddr.groovy`
