@@ -1587,31 +1587,6 @@ and stopped before add state attribute</label>
     <zIndex>0</zIndex>
 </connections>
 <connections>
-    <id>03842dba-f22f-32e5-0000-000000000000</id>
-    <parentGroupId>827d3a88-2dee-3cda-0000-000000000000</parentGroupId>
-    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-    <destination>
-        <groupId>827d3a88-2dee-3cda-0000-000000000000</groupId>
-        <id>197ea187-3c44-3ac2-0000-000000000000</id>
-        <type>PROCESSOR</type>
-    </destination>
-    <flowFileExpiration>0 sec</flowFileExpiration>
-    <labelIndex>1</labelIndex>
-    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-    <name></name>
-    <selectedRelationships>failure</selectedRelationships>
-    <source>
-        <groupId>827d3a88-2dee-3cda-0000-000000000000</groupId>
-        <id>0b8eaaf1-642e-3eb7-0000-000000000000</id>
-        <type>PROCESSOR</type>
-    </source>
-    <zIndex>0</zIndex>
-</connections>
-<connections>
     <id>0f82bcfd-9c0b-38a6-0000-000000000000</id>
     <parentGroupId>827d3a88-2dee-3cda-0000-000000000000</parentGroupId>
     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
@@ -1636,46 +1611,17 @@ and stopped before add state attribute</label>
     <zIndex>0</zIndex>
 </connections>
 <connections>
-    <id>26b6e3d7-b6ef-368f-0000-000000000000</id>
+    <id>1a55a921-355e-3870-0000-000000000000</id>
     <parentGroupId>827d3a88-2dee-3cda-0000-000000000000</parentGroupId>
     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-    <destination>
-        <groupId>827d3a88-2dee-3cda-0000-000000000000</groupId>
-        <id>0c45e76a-ae42-342a-0000-000000000000</id>
-        <type>PROCESSOR</type>
-    </destination>
-    <flowFileExpiration>0 sec</flowFileExpiration>
-    <labelIndex>1</labelIndex>
-    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
-    <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
-    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
-    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
-    <name></name>
-    <selectedRelationships>success</selectedRelationships>
-    <source>
-        <groupId>827d3a88-2dee-3cda-0000-000000000000</groupId>
-        <id>197ea187-3c44-3ac2-0000-000000000000</id>
-        <type>PROCESSOR</type>
-    </source>
-    <zIndex>0</zIndex>
-</connections>
-<connections>
-    <id>2e3e1d29-7549-3835-0000-000000000000</id>
-    <parentGroupId>827d3a88-2dee-3cda-0000-000000000000</parentGroupId>
-    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
-    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
-    <bends>
-        <x>1208.0</x>
-        <y>488.0</y>
-    </bends>
     <destination>
         <groupId>827d3a88-2dee-3cda-0000-000000000000</groupId>
         <id>233efe05-e3bd-3899-0000-000000000000</id>
         <type>PROCESSOR</type>
     </destination>
     <flowFileExpiration>0 sec</flowFileExpiration>
-    <labelIndex>0</labelIndex>
+    <labelIndex>1</labelIndex>
     <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
     <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
     <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
@@ -2136,92 +2082,6 @@ and stopped before add state attribute</label>
     <state>STOPPED</state>
     <style/>
     <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
-</processors>
-<processors>
-    <id>197ea187-3c44-3ac2-0000-000000000000</id>
-    <parentGroupId>827d3a88-2dee-3cda-0000-000000000000</parentGroupId>
-    <position>
-        <x>1086.5800482615355</x>
-        <y>272.3028318427513</y>
-    </position>
-    <bundle>
-        <artifact>nifi-update-attribute-nar</artifact>
-        <group>org.apache.nifi</group>
-        <version>1.12.1</version>
-    </bundle>
-    <config>
-        <bulletinLevel>WARN</bulletinLevel>
-        <comments></comments>
-        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
-        <descriptors>
-            <entry>
-                <key>Delete Attributes Expression</key>
-                <value>
-                    <name>Delete Attributes Expression</name>
-                </value>
-            </entry>
-            <entry>
-                <key>Store State</key>
-                <value>
-                    <name>Store State</name>
-                </value>
-            </entry>
-            <entry>
-                <key>Stateful Variables Initial Value</key>
-                <value>
-                    <name>Stateful Variables Initial Value</name>
-                </value>
-            </entry>
-            <entry>
-                <key>canonical-value-lookup-cache-size</key>
-                <value>
-                    <name>canonical-value-lookup-cache-size</name>
-                </value>
-            </entry>
-            <entry>
-                <key>sample_measurement</key>
-                <value>
-                    <name>sample_measurement</name>
-                </value>
-            </entry>
-        </descriptors>
-        <executionNode>ALL</executionNode>
-        <lossTolerant>false</lossTolerant>
-        <penaltyDuration>30 sec</penaltyDuration>
-        <properties>
-            <entry>
-                <key>Delete Attributes Expression</key>
-            </entry>
-            <entry>
-                <key>Store State</key>
-                <value>Do not store state</value>
-            </entry>
-            <entry>
-                <key>Stateful Variables Initial Value</key>
-            </entry>
-            <entry>
-                <key>canonical-value-lookup-cache-size</key>
-                <value>100</value>
-            </entry>
-            <entry>
-                <key>sample_measurement</key>
-                <value>${sample_measurement:toDecimal()}</value>
-            </entry>
-        </properties>
-        <runDurationMillis>0</runDurationMillis>
-        <schedulingPeriod>0 sec</schedulingPeriod>
-        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
-        <yieldDuration>1 sec</yieldDuration>
-    </config>
-    <executionNodeRestricted>false</executionNodeRestricted>
-    <name>UpdateAttribute</name>
-    <relationships>
-        <autoTerminate>false</autoTerminate>
-        <name>success</name>
-    </relationships>
-    <state>STOPPED</state>
-    <style/>
-    <type>org.apache.nifi.processors.attributes.UpdateAttribute</type>
 </processors>
 <processors>
     <id>233efe05-e3bd-3899-0000-000000000000</id>
@@ -9245,5 +9105,5 @@ come from the portal</label>
             <variables/>
         </processGroups>
     </snippet>
-    <timestamp>12/17/2020 09:16:08 EST</timestamp>
+    <timestamp>12/18/2020 12:05:13 EST</timestamp>
 </template>
