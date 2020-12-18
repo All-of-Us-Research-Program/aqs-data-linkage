@@ -17,7 +17,7 @@ This linkage involves 2 databases:
 
 ### NiFi Pipeline
 ##### Overview:
-The get AQS data process group collects all EPA data from a given date range and populates epa.db. The get participant-specific data process group gets the participant’s address and queries epa.db to get all data within 25 miles, and populates `aqs.db`.  
+The get AQS data process group collects all EPA data from a given date range and populates epa.db. The get participant-specific data process group gets the participant’s address and queries epa.db to get all data within 25 miles, and populates `aqs.db`. Failures during API calls and database queries are handled by writing the flowfile out to a local error folder.  
 Open template `AQS.xml` in NiFi to see specifics.
 
 Specifics on process groups:  
@@ -30,6 +30,7 @@ This process group converts a participant’s address to URL format and then use
 ### Next steps
 - AoU will need to get their own key to access the AQS API.
 - Participant IDs and addresses will need to be read into the participant-specific data process group.
+- Finally, it would be good to set up better error handling.
 
 ### Files:
 
